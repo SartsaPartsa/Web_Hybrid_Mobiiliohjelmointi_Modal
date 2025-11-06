@@ -1,7 +1,6 @@
-# Web & Hybrid Mobile Programming - Modal Exercise
+# Web_Hybrid_Mobiiliohjelmointi_Modal
 
-## 📱 React Native Modal Demonstration
-
+📱 React Native — Modal-harjoitus  
 **Tekijä:** Sara Vehviläinen  
 **Oppilaitos:** Oulun ammattikorkeakoulu  
 **Kurssi:** Web- ja hybriditeknologiat mobiiliohjelmoinnissa (IN00CT08-3006)  
@@ -9,48 +8,24 @@
 
 ## 🧩 Tehtävän kuvaus
 
-Tämä harjoitus on osa kurssia "Web- ja hybriditeknologiat mobiiliohjelmoinnissa". Sovellus demonstroi **React Native Modal** -komponentin käyttöä TypeScript-ympäristössä.
+Tämä sovellus demonstroi React Native Modal -komponentin käyttöä TypeScript-ympäristössä.  
+Tehtävä on osa kurssia Web- ja hybriditeknologiat mobiiliohjelmoinnissa (IN00CT08-3006).
 
-### Toiminnallisuus:
+## ✨ Toiminnallisuus
+
 - Käyttäjälle näytetään painike "Show modal message"
 - Painiketta painamalla avautuu Modal-ikkuna
 - Modal sisältää viestin ja Close-painikkeen
 - Käyttäjä voi sulkea modaalin painamalla Close-painiketta tai Android-laitteissa laitteen Back-nappia
+- Modal käyttää `transparent={false}` ja `animationType="none"` asetuksia
 
-## ✨ Toteutuksen yksityiskohdat
+## 🛠️ Käytetyt teknologiat ja komponentit
 
-### Käyttöliittymä:
-- **Pressable-komponentti** näytöllä tekstillä "Show modal message"
-- Painamalla painiketta avautuu Modal-ikkuna
+**React Native** (Expo)  
+**React Hook:** useState  
+**React Native Komponentit:** View, Text, Pressable, Modal, StyleSheet
 
-### Modal-ominaisuudet:
-- **Ei läpinäkyvä tausta**: `transparent={false}` - puhdas valkoinen tausta
-- **Ei animaatiota**: `animationType="none"` - välitön näyttö ilman siirtymiä
-- **Sulkeminen**: Close-painike tai Android Back-nappi (`onRequestClose`)
-- **Tyylittely**: React Native StyleSheet-objektilla
-
-### Tekninen toteutus:
-- **State-hallinta**: useState Hook modaalin näkyvyyden hallintaan
-- **TypeScript**: Tyyppiturvallisuus koodissa
-- **React Native komponentit**: View, Text, Pressable, Modal
-
-## 🛠️ Teknologiat ja työkalut
-
-| Teknologia       | Versio   | Kuvaus                              |
-|------------------|----------|-------------------------------------|
-| **React Native** | 0.81.5   | Cross-platform mobiilisovelluskehys |
-| **TypeScript**   | ~5.9.2   | Tyyppiturvallisuus JavaScriptille   |
-| **Expo**         | ~54.0.22 | React Native kehitysympäristö       |
-| **React**        | 19.1.0   | Käyttöliittymäkirjasto              |
-
-### Käytetyt React Native komponentit:
-- `View` - Pohjakomponentti layoutille
-- `Text` - Tekstin näyttäminen
-- `Pressable` - Painikkeiden toteutus
-- `Modal` - Modal-ikkunoiden hallinta
-- `StyleSheet` - Tyylimäärittely
-
-## 🚀 Asennusohjeet
+## 🚀 Käyttöönotto
 
 ### Olemassa olevan projektin käynnistys:
 ```bash
@@ -74,48 +49,68 @@ npm run ios       # iOS-simulaattori
 npm run web       # Verkkoselain
 ```  
 
-## 📁 Projektirakenne
+## 📁 Projektikansio
 
 ```
-Tehtava2/
-  Modal/
-    ├── App.tsx             # Sovelluksen pääkomponentti (TypeScript)
-    ├── index.ts            # Sovelluksen käynnistyspiste  
-    ├── package.json        # Projektin riippuvuudet ja npm-skriptit
-    ├── app.json            # Expo-sovelluksen konfiguraatio
-    ├── tsconfig.json       # TypeScript-konfiguraatio
-    ├── assets/             # Kuvat ja staattiset resurssit
-    └── node_modules/       # Asennetut riippuvuudet
+Web_Hybrid_Mobiiliohjelmointi_Modal/
+├── README.md
+└── Tehtava2/
+    └── Modal/
+        ├── App.tsx              # Sovelluksen pääkomponentti
+        ├── app.json             # Expo-konfiguraatio  
+        ├── index.ts             # Sovelluksen käynnistyspiste
+        ├── package.json         # Projektin riippuvuudet
+        ├── package-lock.json    # Lukitut riippuvuusversiot
+        ├── tsconfig.json        # TypeScript-asetukset
+        ├── .gitignore           # Git-ohitettavat tiedostot
+        └── assets/              # Kuvat ja resurssit
+            ├── adaptive-icon.png
+            ├── favicon.png
+            ├── icon.png
+            └── splash-icon.png
 ```
 
 ## 🎯 Oppimistavoitteet
 
-Tämän harjoituksen suoritettuaan opiskelija osaa:
+- React Native Modal -komponentin käyttö
+- Pressable-komponentin hyödyntäminen painikkeena
+- Käyttöliittymän tila (useState)
+- Modal-ikkunan hallinta ja sulkeminen Android Back-napilla
+- React Native -komponenttien tyylittely StyleSheet-oliolla
+- TypeScript React Native -sovelluksessa
 
-- ✅ **Modal-komponentti**: React Native Modal -komponentin peruskäyttö
-- ✅ **Vuorovaikutus**: Pressable-komponentin hyödyntäminen käyttöliittymässä
-- ✅ **Tilanhallinta**: useState Hook:in käyttö komponentin tilan hallinnassa
-- ✅ **Alustariippuvuus**: Android Back-napin toiminnallisuuden toteutus
-- ✅ **Tyylittely**: React Native StyleSheet-objektin käyttö
-- ✅ **TypeScript**: Tyyppiturvallisuuden hyödyntäminen React Native -sovelluksessa
+## 📝 Huomioita
 
-## 📝 Teknisiä huomioita
-
-| Ominaisuus                | Selitys                                                     |
-|---------------------------|-------------------------------------------------------------|
-| `animationType="none"`    | Ei animaatiota - modal ilmestyy välittömästi                |
-| `transparent={false}`     | Ei läpinäkyvä tausta - puhdas valkoinen modal-näkymä        |
-| `onRequestClose`          | Mahdollistaa Android Back-napin käytön modaalin sulkemiseen |
-| `StyleSheet`              | React Native:n optimoitu tapa tyylien määrittelyyn          |
-| `useState<boolean>`       | TypeScript-tyyppimäärittely boolean-tilalle                 |
+- `animationType="none"` - ei animaatiota modaalin ilmestyessä
+- `transparent={false}` - modal käyttää valkoista taustaa
+- `onRequestClose` mahdollistaa Android Back-napin käytön modaalin sulkemiseen
+- Tyylit on toteutettu React Native StyleSheet-objektilla
+- Sovellus on lukittu pystysuoraan orientaatioon
 
 ## 📚 Oppimisresurssit
 
-- [React Native Modal Documentation](https://reactnative.dev/docs/modal)
-- [React Native Pressable Documentation](https://reactnative.dev/docs/pressable)
-- [React useState Hook](https://react.dev/reference/react/useState)
-- [Expo Documentation](https://docs.expo.dev/)
+**React Native dokumentaatio:**
+- [React Native Documentation](https://reactnative.dev/) - Virallinen dokumentaatio
+- [React Native Modal](https://reactnative.dev/docs/modal) - Modal-komponentin käyttö
+- [React Native Pressable](https://reactnative.dev/docs/pressable) - Painikkeiden toteutus
+- [React Native StyleSheet](https://reactnative.dev/docs/stylesheet) - Tyylien määrittely
+- [React Native View](https://reactnative.dev/docs/view) - Pohjakomponentti layoutille
+- [React Native Text](https://reactnative.dev/docs/text) - Tekstin näyttäminen
 
----
+**React Hooks:**
+- [React useState Hook](https://react.dev/reference/react/useState) - Tilanhallinnan perusteet
+- [React Hooks Documentation](https://react.dev/reference/react) - Kaikki React Hooks
 
-**💡 Vinkki:** Kokeile muuttaa `animationType`-arvoa (`"fade"`, `"slide"`, `"none"`) ja `transparent`-arvoa (`true`/`false`) nähdäksesi eri modal-tyylit!
+**Expo dokumentaatio:**
+- [Expo Documentation](https://docs.expo.dev/) - Expo-alustan dokumentaatio
+- [Expo CLI](https://docs.expo.dev/workflow/expo-cli/) - Komentorivityökalut
+- [Expo Go App](https://expo.dev/client) - Sovelluksen testaus mobiililaitteella
+
+**TypeScript:**
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/) - TypeScript-dokumentaatio
+- [TypeScript with React Native](https://reactnative.dev/docs/typescript) - TypeScript React Native -sovelluksissa
+
+**Työkalut ja ympäristöt:**
+- [VS Code React Native Tools](https://marketplace.visualstudio.com/items?itemName=msjsdiag.vscode-react-native) - Kehitystyökalut
+- [Android Studio](https://developer.android.com/studio) - Android-emulaattori
+- [Xcode](https://developer.apple.com/xcode/) - iOS-simulaattori
