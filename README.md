@@ -1,17 +1,18 @@
 # Web_Hybrid_Mobiiliohjelmointi_Modal
 
-📱 React Native — Modal-harjoitus  
+## 📱 React Native — Modal-harjoitus  
+
 **Tekijä:** Sara Vehviläinen  
 **Oppilaitos:** Oulun ammattikorkeakoulu  
 **Kurssi:** Web- ja hybriditeknologiat mobiiliohjelmoinnissa (IN00CT08-3006)  
 **Lukukausi:** Syksy 2025
 
-## 🧩 Tehtävän kuvaus
+### 🧩 Tehtävän kuvaus
 
 Tämä sovellus demonstroi React Native Modal -komponentin käyttöä TypeScript-ympäristössä.  
 Tehtävä on osa kurssia Web- ja hybriditeknologiat mobiiliohjelmoinnissa (IN00CT08-3006).
 
-## ✨ Toiminnallisuus
+### ✨ Toiminnallisuus
 
 - Käyttäjälle näytetään painike "Show modal message"
 - Painiketta painamalla avautuu Modal-ikkuna
@@ -19,15 +20,14 @@ Tehtävä on osa kurssia Web- ja hybriditeknologiat mobiiliohjelmoinnissa (IN00C
 - Käyttäjä voi sulkea modaalin painamalla Close-painiketta tai Android-laitteissa laitteen Back-nappia
 - Modal käyttää `transparent={false}` ja `animationType="none"` asetuksia
 
-## 🛠️ Käytetyt teknologiat ja komponentit
+### 🛠️ Käytetyt teknologiat ja komponentit
 
 **React Native** (Expo)  
 **React Hook:** useState  
 **React Native Komponentit:** View, Text, Pressable, Modal, StyleSheet
 
-## 🚀 Käyttöönotto
 
-### Olemassa olevan projektin käynnistys:
+#### Olemassa olevan projektin käynnistys:
 ```bash
 # Asenna riippuvuudet
 npm install
@@ -51,7 +51,7 @@ npm run web       # Verkkoselain
 
 ## 📁 Projektikansio
 
-```
+```plaintext
 Web_Hybrid_Mobiiliohjelmointi_Modal/
 ├── README.md
 └── Tehtava2/
@@ -70,7 +70,7 @@ Web_Hybrid_Mobiiliohjelmointi_Modal/
             └── splash-icon.png
 ```
 
-## 🎯 Oppimistavoitteet
+### 🎯 Oppimistavoitteet
 
 - React Native Modal -komponentin käyttö
 - Pressable-komponentin hyödyntäminen painikkeena
@@ -79,7 +79,7 @@ Web_Hybrid_Mobiiliohjelmointi_Modal/
 - React Native -komponenttien tyylittely StyleSheet-oliolla
 - TypeScript React Native -sovelluksessa
 
-## 📝 Huomioita
+### 📝 Huomioita
 
 - `animationType="none"` - ei animaatiota modaalin ilmestyessä
 - `transparent={false}` - modal käyttää valkoista taustaa
