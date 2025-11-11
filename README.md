@@ -42,13 +42,6 @@ npx expo start
 1. Asenna **Expo Go** -sovellus (iOS App Store / Google Play)
 2. Skannaa QR-koodi Expo Go -sovelluksella
 
-#### 💻 Emulaattori/Simulaattori:
-```bash
-npm run android   # Android-emulaattori
-npm run ios       # iOS-simulaattori  
-npm run web       # Verkkoselain
-```  
-
 ## 📁 Projektikansio
 
 ```plaintext
@@ -114,3 +107,5 @@ Web_Hybrid_Mobiiliohjelmointi_Modal/
 - [VS Code React Native Tools](https://marketplace.visualstudio.com/items?itemName=msjsdiag.vscode-react-native) - Kehitystyökalut
 - [Android Studio](https://developer.android.com/studio) - Android-emulaattori
 - [Xcode](https://developer.apple.com/xcode/) - iOS-simulaattori
+
+
