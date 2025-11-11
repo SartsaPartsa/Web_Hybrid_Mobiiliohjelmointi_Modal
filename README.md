@@ -42,6 +42,13 @@ npx expo start
 1. Asenna **Expo Go** -sovellus (iOS App Store / Google Play)
 2. Skannaa QR-koodi Expo Go -sovelluksella
 
+#### 💻 Emulaattori/Simulaattori:
+```bash
+npm run android   # Android-emulaattori
+npm run ios       # iOS-simulaattori  
+npm run web       # Verkkoselain
+```  
+
 ## 📁 Projektikansio
 
 ```plaintext
